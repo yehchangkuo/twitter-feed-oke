@@ -14,7 +14,7 @@ spec:
       labels:
         app: twitter-feed
         commit: ${WERCKER_GIT_COMMIT}
-        color: blue
+      
     spec:
       containers:
       - name: twitter-feed
@@ -40,6 +40,6 @@ spec:
     targetPort: 8080
   selector:
     app: twitter-feed
-     color: blue
+    
   type: ClusterIP
 ---
