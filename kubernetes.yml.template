@@ -32,7 +32,7 @@ spec:
         - name: podinfo
           downwardAPI:
             items:
-              - path: "labels"
+            - path: "labels"
               fieldRef:
                 fieldPath: metadata.labels          
       imagePullSecrets:
